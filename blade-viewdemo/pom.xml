@@ -9,7 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>blade1-helloworld</artifactId>
+    <artifactId>blade-viewdemo</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.bladejava</groupId>
+            <artifactId>blade-template-jetbrick</artifactId>
+            <version>0.0.8</version>
+        </dependency>
+    </dependencies>
 
 </project>

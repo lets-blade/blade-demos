@@ -9,7 +9,8 @@
     <packaging>pom</packaging>
     <version>0.0.1</version>
     <modules>
-        <module>blade1-helloworld</module>
+        <module>blade-helloworld</module>
+        <module>blade-viewdemo</module>
     </modules>
 
     <properties>
@@ -63,6 +64,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
