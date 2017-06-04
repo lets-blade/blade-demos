@@ -1,6 +1,7 @@
 package com.demo;
 
-import static com.blade.Blade.*;
+
+import com.blade.Blade;
 
 /**
  * Created by biezhi on 2017/2/18.
@@ -8,9 +9,8 @@ import static com.blade.Blade.*;
 public class Application {
 
     public static void main(String[] args) {
-        $().get("/", (request, response) -> {
-            response.html("<h1>Hello blade!</h1>");
-        }).start(Application.class);
+        System.setProperty("com.blade.logger.defaultLogLevel", "DEBUG");
+        Blade.me().openMonitor(false).get("/", ((request, response) -> response.text("Hello World"))).start();
     }
 
 }

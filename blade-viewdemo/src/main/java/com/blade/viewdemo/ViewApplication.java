@@ -8,7 +8,7 @@ import com.blade.Blade;
 public class ViewApplication {
 
     public static void main(String[] args) {
-        Blade.$().start(ViewApplication.class);
+        Blade.me().start(ViewApplication.class);
     }
 
 }
