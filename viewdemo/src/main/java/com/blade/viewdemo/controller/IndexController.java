@@ -12,8 +12,8 @@ import com.blade.mvc.http.Request;
 @Path
 public class IndexController {
 
-    @Route(values = {"/", "/index"}, method = HttpMethod.GET)
-    public String index(Request request){
+    @Route(value = {"/", "/index"}, method = HttpMethod.GET)
+    public String index(Request request) {
         request.attribute("id", StringKit.rand(20));
         return "index.html";
     }

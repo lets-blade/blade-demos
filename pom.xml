@@ -8,9 +8,10 @@
     <artifactId>blade-demos</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
+
     <modules>
-        <module>blade-helloworld</module>
-        <module>blade-viewdemo</module>
+        <module>helloworld</module>
+        <module>viewdemo</module>
     </modules>
 
     <properties>
