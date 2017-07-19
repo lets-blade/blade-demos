@@ -16,9 +16,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.0-beta</blade.version>
+        <blade.version>2.0.1-alpha1</blade.version>
     </properties>
-
+    
     <dependencies>
         <!-- mvc -->
         <dependency>
@@ -26,6 +26,7 @@
             <artifactId>blade-mvc</artifactId>
             <version>${blade.version}</version>
         </dependency>
+
     </dependencies>
 
     <build>
