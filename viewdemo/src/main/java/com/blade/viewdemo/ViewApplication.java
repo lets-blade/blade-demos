@@ -10,7 +10,6 @@ public class ViewApplication {
 
     public static void main(String[] args) {
         Blade.me()
-                .templateEngine(new JetbrickTemplateEngine())
                 .start(ViewApplication.class, args);
     }
 
