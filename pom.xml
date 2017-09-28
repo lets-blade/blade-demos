@@ -13,6 +13,8 @@
         <module>blade-helloworld</module>
         <module>blade-route</module>
         <module>blade-template</module>
+        <module>blade-ajax</module>
+        <module>blade-vue-todolist</module>
     </modules>
 
     <properties>

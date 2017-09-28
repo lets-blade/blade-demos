@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blade & Vue.js • TodoList</title>
+    <link href="/static/app.css" rel="stylesheet" />
+    <style> [v-cloak] { display: none; } </style>
+</head>
+<body>
+
+<section class="todoapp">
+    <header class="header">
+        <h1>Blade Todos</h1>
+        <input class="new-todo"
+               autofocus autocomplete="off"
+               placeholder="还需要完成什么?"
+               v-model="newTodo"
+               @keyup.enter="addTodo">
+    </header>
+    <section class="main" v-show="todos.length" v-cloak>
+        <input class="toggle-all" type="checkbox" v-model="allDone">
+        <ul class="todo-list">
+            <li v-for="todo in filteredTodos"
+                class="todo"
+                :key="todo.id"
+                :class="{ completed: todo.completed, editing: todo == editedTodo }">
+                <div class="view">
+                    <input class="toggle" type="checkbox" v-model="todo.completed">
+                    <label @dblclick="editTodo(todo)">{{ todo.title }}</label>
+                    <button class="destroy" @click="removeTodo(todo)"></button>
+                </div>
+                <input class="edit" type="text"
+                       v-model="todo.title"
+                       v-todo-focus="todo == editedTodo"
+                       @blur="doneEdit(todo)"
+                       @keyup.enter="doneEdit(todo)"
+                       @keyup.esc="cancelEdit(todo)">
+            </li>
+        </ul>
+    </section>
+    <footer class="footer" v-show="todos.length" v-cloak>
+    <span class="todo-count">
+      <strong>{{ remaining }}</strong> {{ remaining | pluralize }} left
+    </span>
+        <ul class="filters">
+            <li><a href="#/all" :class="{ selected: visibility == 'all' }">所有</a></li>
+            <li><a href="#/active" :class="{ selected: visibility == 'active' }">未完成</a></li>
+            <li><a href="#/completed" :class="{ selected: visibility == 'completed' }">已完成</a></li>
+        </ul>
+        <button class="clear-completed" @click="removeCompleted" v-show="todos.length > remaining">
+            清空完成
+        </button>
+    </footer>
+</section>
+<footer class="info">
+    <p>双击编辑Todo</p>
+    <p>Written by <a href="https://biezhi.me">biezhi</a></p>
+    <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="/static/base.js"></script>
+<script src="/static/vue.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
