@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    #for(item : users)
+    <li>${for.index}: ${item}</li>
+    #end
+</ul>
+
+<hr/>
+
+${map.name} -> ${map.age}
+
+<hr/>
+
+#if(map.age > 18)
+    成年
+#else
+    未成年
+#end
+
+</body>
+</html>

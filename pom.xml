@@ -12,6 +12,7 @@
     <modules>
         <module>blade-helloworld</module>
         <module>blade-route</module>
+        <module>blade-template</module>
     </modules>
 
     <properties>

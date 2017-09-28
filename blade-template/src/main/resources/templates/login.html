@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="email" id="inputEmail" class="form-control" placeholder="电子邮件" required autofocus>
+            <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+            <div id="remember" class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> 记住我
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">登&nbsp;陆</button>
+        </form><!-- /form -->
+        <a href="#" class="forgot-password">
+            忘记密码?
+        </a>
+    </div><!-- /card-container -->
+</div><!-- /container -->
+<script src="/static/main.js"></script>
+</body>
+</html>
