@@ -10,13 +10,13 @@
     <version>0.0.1</version>
 
     <modules>
-        <module>helloworld</module>
-        <module>viewdemo</module>
+        <module>blade-helloworld</module>
+        <module>blade-route</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.1-beta1</blade.version>
+        <blade.version>2.0.2</blade.version>
     </properties>
     
     <dependencies>
@@ -26,7 +26,6 @@
             <artifactId>blade-mvc</artifactId>
             <version>${blade.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>

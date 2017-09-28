@@ -1,6 +1,7 @@
 # blade-demos
 
-this project is some blade demo application.
+blade version => `2.0.2`
 
-- helloworld：this is blade hello world application
-- viewdemo：this is blade and jetbrick template engine demo
+- [blade-helloworld](blade-helloworld)
+- [blade-route](blade-route)
+
