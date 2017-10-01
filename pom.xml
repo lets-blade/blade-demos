@@ -15,11 +15,12 @@
         <module>blade-template</module>
         <module>blade-ajax</module>
         <module>blade-vue-todolist</module>
+        <module>blade-upload</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.2</blade.version>
+        <blade.version>2.0.3-SNAPSHOT</blade.version>
     </properties>
     
     <dependencies>
