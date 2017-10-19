@@ -16,6 +16,7 @@
         <module>blade-ajax</module>
         <module>blade-vue-todolist</module>
         <module>blade-upload</module>
+        <module>blade-package</module>
     </modules>
 
     <properties>
