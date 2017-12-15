@@ -17,11 +17,12 @@
         <module>blade-vue-todolist</module>
         <module>blade-upload</module>
         <module>blade-package</module>
+        <module>blade-custom-banner</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.5-BETA1</blade.version>
+        <blade.version>2.0.5-RELEASE</blade.version>
     </properties>
     
     <dependencies>
