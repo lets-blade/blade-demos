@@ -18,11 +18,12 @@
         <module>blade-upload</module>
         <module>blade-package</module>
         <module>blade-custom-banner</module>
+        <module>blade-kit-example</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.5-RELEASE</blade.version>
+        <blade.version>2.0.6-Alpha1</blade.version>
     </properties>
     
     <dependencies>

@@ -1,7 +1,5 @@
 # blade-demos
 
-blade version => `2.0.3`
-
 - [blade-helloworld](blade-helloworld)
 - [blade-upload](blade-upload)
 - [blade-ajax](blade-ajax)
@@ -10,3 +8,4 @@ blade version => `2.0.3`
 - [blade-vue-todolist](blade-vue-todolist)
 - [blade-package](blade-package)
 - [blade-custom-banner](blade-custom-banner)
+- [blade-kit-example](blade-kit-example)
