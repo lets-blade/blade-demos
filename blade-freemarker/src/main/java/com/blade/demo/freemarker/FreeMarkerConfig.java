@@ -9,9 +9,11 @@ import com.blade.mvc.view.template.FreeMarkerTemplateEngine;
  * Created by Administrator on 2017/12/24.
  */
 @Bean
-public class FreeMarkerConfig  implements BeanProcessor{
+public class FreeMarkerConfig implements BeanProcessor {
+
     @Override
     public void processor(Blade blade) {
+
         blade.templateEngine(new FreeMarkerTemplateEngine());
         /**
          * if you need to do more configration you can use this constructor
