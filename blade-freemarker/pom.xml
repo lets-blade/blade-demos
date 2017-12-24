@@ -12,9 +12,9 @@
     <artifactId>blade-freemarker</artifactId>
     <dependencies>
         <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.10</version>
+            <groupId>com.bladejava</groupId>
+            <artifactId>blade-template-freemarker</artifactId>
+            <version>1.0.1</version>
         </dependency>
     </dependencies>
 

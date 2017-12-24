@@ -1,4 +1,4 @@
-package tpl;
+package com.blade.demo.freemarker;
 
 import com.blade.mvc.annotation.GetRoute;
 import com.blade.mvc.annotation.Path;

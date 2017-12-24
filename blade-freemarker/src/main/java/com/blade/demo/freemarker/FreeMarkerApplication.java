@@ -1,4 +1,4 @@
-package tpl;
+package com.blade.demo.freemarker;
 
 import com.blade.Blade;
 
