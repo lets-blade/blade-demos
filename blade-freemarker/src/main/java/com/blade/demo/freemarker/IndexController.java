@@ -27,7 +27,7 @@ public class IndexController {
         map.put("age", 20);
         request.attribute("map", map);
 
-        return "index.ftl";
+        return "index";
     }
 
     @GetRoute("login")

@@ -13,5 +13,9 @@ public class FreeMarkerConfig  implements BeanProcessor{
     @Override
     public void processor(Blade blade) {
         blade.templateEngine(new FreeMarkerTemplateEngine());
+        /**
+         * if you need to do more configration you can use this constructor
+         * FreeMarkerTemplateEngine(Configration config)
+         */
     }
 }
