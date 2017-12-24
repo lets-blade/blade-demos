@@ -9,3 +9,4 @@
 - [blade-package](blade-package)
 - [blade-custom-banner](blade-custom-banner)
 - [blade-kit-example](blade-kit-example)
+- [blade-freemarker-example](blade-freemarker)
