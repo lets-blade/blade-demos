@@ -19,6 +19,7 @@
         <module>blade-package</module>
         <module>blade-custom-banner</module>
         <module>blade-kit-example</module>
+        <module>blade-freemarker</module>
     </modules>
 
     <properties>
