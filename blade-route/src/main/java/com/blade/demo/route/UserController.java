@@ -12,7 +12,7 @@ public class UserController {
 
     @PostRoute("save")
     @JSON
-    public RestResponse saveUser(@Param String username, @Param String password){
+    public RestResponse<?> saveUser(@Param String username, @Param String password){
         System.out.println("username => " + username);
         System.out.println("password => " + password);
         return RestResponse.ok();
@@ -20,7 +20,7 @@ public class UserController {
 
     @PostRoute("save-by-model")
     @JSON
-    public RestResponse saveUserByModel(User user){
+    public RestResponse<?> saveUserByModel(User user){
         System.out.println("username => " + user.getUsername());
         System.out.println("password => " + user.getPassword());
         return RestResponse.ok();

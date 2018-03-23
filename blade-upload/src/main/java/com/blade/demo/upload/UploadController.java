@@ -23,7 +23,7 @@ public class UploadController {
 
     @PostRoute("upload")
     @JSON
-    public RestResponse doUpload(@MultipartParam FileItem fileItem) {
+    public RestResponse<?> doUpload(@MultipartParam FileItem fileItem) {
         if (null != fileItem) {
             byte[] data = fileItem.getData();
             // Save the temporary file to the specified path
