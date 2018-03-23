@@ -1,0 +1,125 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AjaxApplication<blade-ajax>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.ajax.AjaxApplication",
+            "projectName": "blade-ajax",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CustomApplication<blade-custom-banner>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.custom.CustomApplication",
+            "projectName": "blade-custom-banner",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FreeMarkerApplication<blade-freemarker>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.freemarker.FreeMarkerApplication",
+            "projectName": "blade-freemarker",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloApplication<blade-helloworld>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.helloworld.HelloApplication",
+            "projectName": "blade-helloworld",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JSONKitExample<blade-kit-example>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.kit.JSONKitExample",
+            "projectName": "blade-kit-example",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloApplication<blade-package>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.HelloApplication",
+            "projectName": "blade-package",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RouteApplication<blade-route>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.route.RouteApplication",
+            "projectName": "blade-route",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TplApplication<blade-template>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.tpl.TplApplication",
+            "projectName": "blade-template",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UploadApplication<blade-upload>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.upload.UploadApplication",
+            "projectName": "blade-upload",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TodoApplication<blade-vue-todolist>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.blade.demo.vue.TodoApplication",
+            "projectName": "blade-vue-todolist",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 0
+        }
+    ]
+}
