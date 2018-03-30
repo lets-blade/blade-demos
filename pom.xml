@@ -24,7 +24,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.7-beta2</blade.version>
+        <blade.version>2.0.7-beta3</blade.version>
     </properties>
     
     <dependencies>
