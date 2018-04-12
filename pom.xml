@@ -20,11 +20,12 @@
         <module>blade-custom-banner</module>
         <module>blade-kit-example</module>
         <module>blade-freemarker</module>
+        <module>blade-task</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.7-R2</blade.version>
+        <blade.version>2.0.8-ALPHA1</blade.version>
     </properties>
     
     <dependencies>
