@@ -21,11 +21,12 @@
         <module>blade-kit-example</module>
         <module>blade-freemarker</module>
         <module>blade-task</module>
+        <module>blade-mongo</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.8-ALPHA1</blade.version>
+        <blade.version>2.0.8-ALPHA2</blade.version>
     </properties>
     
     <dependencies>
