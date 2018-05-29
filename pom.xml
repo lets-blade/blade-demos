@@ -20,6 +20,8 @@
         <module>blade-custom-banner</module>
         <module>blade-kit-example</module>
         <module>blade-freemarker</module>
+        <module>blade-task</module>
+        <module>blade-mongo</module>
     </modules>
 
     <properties>
