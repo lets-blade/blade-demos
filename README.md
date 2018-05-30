@@ -12,3 +12,4 @@
 - [blade-freemarker-example](blade-freemarker)
 - [blade-task](blade-task)
 - [blade-mongo](blade-mongo)
+- [blade-param](blade-param)
