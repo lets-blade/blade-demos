@@ -13,3 +13,4 @@
 - [blade-task](blade-task)
 - [blade-mongo](blade-mongo)
 - [blade-param](blade-param)
+- [blade-test](blade-test)
