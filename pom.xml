@@ -25,6 +25,7 @@
         <module>blade-activemq</module>
         <module>blade-param</module>
         <module>blade-test</module>
+        <module>blade-static</module>
     </modules>
 
     <properties>
