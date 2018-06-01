@@ -5,6 +5,7 @@ import com.blade.mvc.http.Request;
 import com.blade.mvc.http.Response;
 import com.blade.mvc.ui.RestResponse;
 
+import java.util.Map;
 import java.util.Optional;
 
 /**
@@ -58,6 +59,18 @@ public class IndexController {
     @JSON
     public RestResponse p7(@BodyParam User user) {
         return RestResponse.ok(user);
+    }
+
+    /**
+     * curl -X POST \
+     *   http://127.0.0.1:9000/p8 \
+     *   -H 'content-type: application/json' \
+     *   -d '{"name":"{\"inoutTypeCode\":2,\"passDeviceCode\":\"TZ_001_65010078ZHONGDA_I7\",\"passTypeCode\":1,\"idnumber\":\"152825198404205136\",\"passTime\":\"2018-06-01 14:05:33\",\"name\":\"两伊。\",\"snapPhoto\":\"data:image/jpeg;base64,Qk12AQAAAAAAADYAAAAoAAAADQAAAAgAAAABABgAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////AP///////////////////////////////////////////////////wD///////////////////////////////////////////////////8A////////////////////////////////////////////////////AFpaWlpaWlpaWlpaWlpaWlpaWlRUVHt7e////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqKir///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAANTU1////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAADU1Nf///////////////////wA=\",\"refId\":\"p9049vighuhg0r83dbfv7ip1f6\",\"idCardPhoto\":\"data:image/jpeg;base64,Qk12AQAAAAAAADYAAAAoAAAADQAAAAgAAAABABgAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////AP///////////////////////////////////////////////////wD///////////////////////////////////////////////////8A////////////////////////////////////////////////////AFpaWlpaWlpaWlpaWlpaWlpaWlRUVHt7e////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqKir///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAANTU1////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAADU1Nf///////////////////wA=\"}"}'
+     */
+    @PostRoute("p8")
+    @JSON
+    public RestResponse p8(@BodyParam Map<String, Object> map) {
+        return RestResponse.ok(map);
     }
 
 }

@@ -11,5 +11,12 @@
 
     <artifactId>blade-param</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.bladejava</groupId>
+            <artifactId>blade-fastjson-support</artifactId>
+            <version>0.0.2</version>
+        </dependency>
 
+    </dependencies>
 </project>
