@@ -26,6 +26,7 @@
         <module>blade-param</module>
         <module>blade-test</module>
         <module>blade-static</module>
+        <module>blade-errorpage</module>
     </modules>
 
     <properties>
