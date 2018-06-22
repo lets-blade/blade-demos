@@ -9,7 +9,7 @@ import com.blade.Blade;
 public class FreeMarkerApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(FreeMarkerApplication.class, args);
+        Blade.of().start(FreeMarkerApplication.class, args);
     }
 
 }

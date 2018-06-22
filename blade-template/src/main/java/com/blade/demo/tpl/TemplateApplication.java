@@ -6,10 +6,10 @@ import com.blade.Blade;
  * @author biezhi
  * @date 2017/9/28
  */
-public class TplApplication {
+public class TemplateApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(TplApplication.class, args);
+        Blade.of().start(TemplateApplication.class, args);
     }
 
 }

@@ -14,8 +14,8 @@ public class TodoApplication {
     private static final List<Todo> todoList = new ArrayList<>();
 
     public static void main(String[] args) {
-        Blade.me()
-                .get("/", (request, response) -> response.render("index.html"))
+        Blade.of()
+                .get("/", ctx -> ctx.render("index.html"))
                 .post("/add", (request, response) -> {
                     request.query("todo").ifPresent(todo -> todoList.add(new Todo(todo, Todo.ACTIVE)));
                     System.out.println("TodoList: " + todoList);

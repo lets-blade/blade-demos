@@ -9,7 +9,7 @@ import com.blade.Blade;
 public class ErrorPageApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(ErrorPageApplication.class, args);
+        Blade.of().start(ErrorPageApplication.class, args);
     }
 
 }

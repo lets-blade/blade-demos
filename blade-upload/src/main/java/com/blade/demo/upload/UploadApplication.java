@@ -9,6 +9,6 @@ import com.blade.Blade;
 public class UploadApplication {
 
     public static void main(String[] args) {
-        Blade.me().showFileList(true).start(UploadApplication.class, args);
+        Blade.of().showFileList(true).start(UploadApplication.class, args);
     }
 }

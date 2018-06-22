@@ -1,8 +1,8 @@
 package com.blade.demo.tpl;
 
 import com.blade.Blade;
-import com.blade.event.BeanProcessor;
 import com.blade.ioc.annotation.Bean;
+import com.blade.loader.BladeLoader;
 import com.blade.mvc.view.template.JetbrickTemplateEngine;
 
 /**
@@ -10,9 +10,11 @@ import com.blade.mvc.view.template.JetbrickTemplateEngine;
  * @date 2017/9/28
  */
 @Bean
-public class TplConfig implements BeanProcessor {
+public class Bootstrap implements BladeLoader {
+
     @Override
-    public void processor(Blade blade) {
+    public void load(Blade blade) {
         blade.templateEngine(new JetbrickTemplateEngine());
     }
+
 }

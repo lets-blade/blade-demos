@@ -9,7 +9,7 @@ import com.blade.Blade;
 public class CustomApplication {
 
     public static void main(String[] args) {
-        Blade.me()
+        Blade.of()
                 .bannerText("Hei hei hei~~~")
                 .threadName("(* ￣3)(ε￣ *)")
                 .start(CustomApplication.class, args);

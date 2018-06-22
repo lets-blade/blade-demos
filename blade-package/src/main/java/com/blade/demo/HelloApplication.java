@@ -9,8 +9,7 @@ import com.blade.Blade;
 public class HelloApplication {
 
     public static void main(String[] args) {
-        Blade.me().get("/", (request, response) -> response.text("Hello World"))
-                .start(HelloApplication.class, args);
+        Blade.of().get("/", ctx -> ctx.text("Hello World")).start(HelloApplication.class, args);
     }
 
 }

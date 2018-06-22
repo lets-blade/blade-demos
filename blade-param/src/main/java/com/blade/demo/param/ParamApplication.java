@@ -12,7 +12,7 @@ public class ParamApplication {
 
     public static void main(String[] args) {
         JsonKit.jsonSupprt(new FastJsonSupport());
-        Blade.me().start(ParamApplication.class, args);
+        Blade.of().start(ParamApplication.class, args);
     }
 
 }

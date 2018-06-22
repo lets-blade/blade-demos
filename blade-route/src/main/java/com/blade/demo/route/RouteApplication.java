@@ -9,9 +9,9 @@ import com.blade.Blade;
 public class RouteApplication {
 
     public static void main(String[] args) {
-        Blade.me()
-                .get("/get", (request, response) -> response.text("Get Route"))
-                .post("/post", (request, response) -> response.text("Post Route"))
+        Blade.of()
+                .get("/get", ctx -> ctx.text("Get Route"))
+                .post("/post", ctx -> ctx.text("Post Route"))
                 .start(RouteApplication.class, args);
     }
 

@@ -9,7 +9,7 @@ import com.blade.Blade;
 public class StaticApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(StaticApplication.class, args);
+        Blade.of().start(StaticApplication.class, args);
     }
 
 }
