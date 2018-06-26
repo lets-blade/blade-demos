@@ -1,6 +1,7 @@
 # blade-demos
 
 - [blade-helloworld](blade-helloworld)
+- [blade-static](blade-static)
 - [blade-upload](blade-upload)
 - [blade-ajax](blade-ajax)
 - [blade-route](blade-route)
@@ -13,3 +14,5 @@
 - [blade-task](blade-task)
 - [blade-mongo](blade-mongo)
 - [blade-param](blade-param)
+- [blade-test](blade-test)
+- [blade-errorpage](blade-errorpage)

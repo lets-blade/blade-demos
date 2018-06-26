@@ -9,7 +9,7 @@ import com.blade.Blade;
 public class TaskApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(TaskApplication.class, args);
+        Blade.of().start(TaskApplication.class, args);
     }
 
 }

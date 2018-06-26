@@ -24,11 +24,16 @@
         <module>blade-mongo</module>
         <module>blade-activemq</module>
         <module>blade-param</module>
+        <module>blade-test</module>
+        <module>blade-static</module>
+        <module>blade-errorpage</module>
+        <module>blade-lattice</module>
+        <module>blade-anima</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.8-SNAPSHOT</blade.version>
+        <blade.version>2.0.9-SNAPSHOT</blade.version>
     </properties>
     
     <dependencies>

@@ -8,10 +8,10 @@ import com.blade.Blade;
  * @author biezhi
  * @date 2018/4/27
  */
-public class Application {
+public class MongoApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(Application.class, args);
+        Blade.of().start(MongoApplication.class, args);
     }
 
 }

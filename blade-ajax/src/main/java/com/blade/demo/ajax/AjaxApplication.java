@@ -9,6 +9,6 @@ import com.blade.Blade;
 public class AjaxApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(AjaxApplication.class, args);
+        Blade.of().start(AjaxApplication.class, args);
     }
 }

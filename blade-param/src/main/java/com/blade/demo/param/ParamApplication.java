@@ -1,6 +1,8 @@
 package com.blade.demo.param;
 
 import com.blade.Blade;
+import com.blade.kit.JsonKit;
+import com.blade.kit.json.FastJsonSupport;
 
 /**
  * @author biezhi
@@ -9,6 +11,8 @@ import com.blade.Blade;
 public class ParamApplication {
 
     public static void main(String[] args) {
-        Blade.me().start(ParamApplication.class, args);
+        JsonKit.jsonSupprt(new FastJsonSupport());
+        Blade.of().start(ParamApplication.class, args);
     }
+
 }
