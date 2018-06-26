@@ -4,7 +4,7 @@ import com.bladejava.lattice.model.User;
 import io.github.biezhi.lattice.AuthInfo;
 import io.github.biezhi.lattice.LatticeRealm;
 import io.github.biezhi.lattice.LoginToken;
-import io.github.biezhi.lattice.exception.NotFoundUserException;
+import io.github.biezhi.lattice.exception.UnknownAccountException;
 
 /**
  * @author biezhi
@@ -16,7 +16,7 @@ public class MyRealm implements LatticeRealm<User> {
     public AuthInfo<User> doAuthenticate(LoginToken loginToken) {
         AuthInfo<User> authInfo = new AuthInfo<>();
         if (!"biezhi".equals(loginToken.getUsername())) {
-            throw new NotFoundUserException();
+            throw new UnknownAccountException();
         }
         authInfo.setUsername(loginToken.getUsername());
         authInfo.setUser(new User("biezhi", "123456", 18, "王爵nice"));
