@@ -1,7 +1,7 @@
 package com.blade.demo.route;
 
 import com.blade.ioc.annotation.Bean;
-import com.blade.mvc.hook.Signature;
+import com.blade.mvc.RouteContext;
 import com.blade.mvc.hook.WebHook;
 import com.blade.mvc.ui.ModelAndView;
 
@@ -11,16 +11,16 @@ import com.blade.mvc.ui.ModelAndView;
  */
 @Bean
 public class Hook1 implements WebHook {
+
     @Override
-    public boolean before(Signature signature) {
+    public boolean before(RouteContext context) {
         return true;
     }
 
     @Override
-    public boolean after(Signature signature) {
-        ModelAndView modelAndView = signature.getResponse().modelAndView();
+    public boolean after(RouteContext context) {
+        ModelAndView modelAndView = context.response().modelAndView();
         modelAndView.setView("hello2.html");
         return true;
     }
-
 }
