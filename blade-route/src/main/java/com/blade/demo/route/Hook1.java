@@ -20,7 +20,9 @@ public class Hook1 implements WebHook {
     @Override
     public boolean after(RouteContext context) {
         ModelAndView modelAndView = context.response().modelAndView();
-        modelAndView.setView("hello2.html");
+        if (null != modelAndView) {
+            modelAndView.setView("hello2.html");
+        }
         return true;
     }
 }
