@@ -29,6 +29,7 @@
         <module>blade-errorpage</module>
         <module>blade-lattice</module>
         <module>blade-anima</module>
+        <module>blade-gzip</module>
     </modules>
 
     <properties>

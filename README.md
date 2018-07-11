@@ -16,3 +16,4 @@
 - [blade-param](blade-param)
 - [blade-test](blade-test)
 - [blade-errorpage](blade-errorpage)
+- [blade-gzip](blade-gzip)
