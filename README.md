@@ -16,3 +16,6 @@
 - [blade-param](blade-param)
 - [blade-test](blade-test)
 - [blade-errorpage](blade-errorpage)
+- [blade-gzip](blade-gzip)
+- [blade-basic-auth](blade-basic-auth)
+- [blade-csrf-token](blade-csrf-token)

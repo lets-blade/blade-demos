@@ -16,12 +16,12 @@
         <module>blade-ajax</module>
         <module>blade-vue-todolist</module>
         <module>blade-upload</module>
-        <module>blade-package</module>
         <module>blade-custom-banner</module>
         <module>blade-kit-example</module>
         <module>blade-freemarker</module>
         <module>blade-task</module>
         <module>blade-mongo</module>
+        <module>blade-package</module>
         <module>blade-activemq</module>
         <module>blade-param</module>
         <module>blade-test</module>
@@ -29,11 +29,14 @@
         <module>blade-errorpage</module>
         <module>blade-lattice</module>
         <module>blade-anima</module>
+        <module>blade-gzip</module>
+        <module>blade-basic-auth</module>
+        <module>blade-csrf-token</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.9-SNAPSHOT</blade.version>
+        <blade.version>2.0.9.BETA3</blade.version>
     </properties>
     
     <dependencies>
