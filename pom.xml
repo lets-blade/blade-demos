@@ -31,6 +31,7 @@
         <module>blade-anima</module>
         <module>blade-gzip</module>
         <module>blade-basic-auth</module>
+        <module>blade-csrf-token</module>
     </modules>
 
     <properties>
