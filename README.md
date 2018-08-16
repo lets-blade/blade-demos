@@ -19,3 +19,4 @@
 - [blade-gzip](blade-gzip)
 - [blade-basic-auth](blade-basic-auth)
 - [blade-csrf-token](blade-csrf-token)
+- [blade-websocket](blade-websocket)

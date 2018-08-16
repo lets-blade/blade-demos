@@ -32,6 +32,7 @@
         <module>blade-gzip</module>
         <module>blade-basic-auth</module>
         <module>blade-csrf-token</module>
+        <module>blade-websocket</module>
     </modules>
 
     <properties>
