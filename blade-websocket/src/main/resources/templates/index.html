@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<div id="page-wrapper">
+    <h1>WebSockets Demo</h1>
+
+    <div id="status">正在连接...</div>
+
+    <ul id="messages"></ul>
+
+    <form id="message-form" action="#" method="post">
+        <textarea id="message" placeholder="请输入消息内容..." required></textarea>
+        <button type="submit">发送消息</button>
+        <button type="button" id="close">关闭连接</button>
+    </form>
+</div>
+<script src="/static/main.js"></script>
+</body>
+</html>
