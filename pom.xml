@@ -33,11 +33,12 @@
         <module>blade-basic-auth</module>
         <module>blade-csrf-token</module>
         <module>blade-websocket</module>
+        <module>blade-verify-code</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.10.RELEASE</blade.version>
+        <blade.version>2.0.11.ALPHA</blade.version>
     </properties>
     
     <dependencies>
