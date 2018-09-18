@@ -1,6 +1,7 @@
 package com.blade.demo.upload;
 
 import com.blade.Blade;
+import com.blade.security.web.cors.CorsMiddleware;
 
 /**
  * @author biezhi
@@ -9,6 +10,8 @@ import com.blade.Blade;
 public class UploadApplication {
 
     public static void main(String[] args) {
-        Blade.of().showFileList(true).start(UploadApplication.class, args);
+        Blade.of().showFileList(true)
+                .use(new CorsMiddleware())
+                .start(UploadApplication.class, args);
     }
 }
