@@ -20,3 +20,4 @@
 - [blade-basic-auth](blade-basic-auth)
 - [blade-csrf-token](blade-csrf-token)
 - [blade-websocket](blade-websocket)
+- [blade-verify-code](blade-verify-code)

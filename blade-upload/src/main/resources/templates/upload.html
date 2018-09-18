@@ -20,7 +20,7 @@
 <script>
     $('#upload').click(function () {
         $.ajax({
-            url: '/upload',
+            url: '/image_upload',
             type: 'POST',
             cache: false,
             data: new FormData($('#uploadForm')[0]),
