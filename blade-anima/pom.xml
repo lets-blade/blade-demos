@@ -15,7 +15,7 @@
         <dependency>
             <groupId>io.github.biezhi</groupId>
             <artifactId>anima</artifactId>
-            <version>0.2.3</version>
+            <version>0.2.4</version>
         </dependency>
     </dependencies>
 </project>
