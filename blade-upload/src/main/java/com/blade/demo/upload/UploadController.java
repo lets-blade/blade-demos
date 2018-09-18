@@ -21,7 +21,7 @@ public class UploadController {
         return "upload.html";
     }
 
-    @PostRoute("upload")
+    @Route("image_upload")
     @JSON
     public RestResponse<?> doUpload(@MultipartParam FileItem fileItem) {
         if (null != fileItem) {
