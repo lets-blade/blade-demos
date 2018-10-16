@@ -13,6 +13,7 @@ import java.io.File;
  *
  * @author biezhi
  * @date 2018/10/16
+ * @since blade-2.0.11.BETA
  */
 public class DownloadApplication {
 
