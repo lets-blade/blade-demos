@@ -6,10 +6,11 @@ import com.blade.mvc.multipart.FileItem;
 import com.blade.mvc.ui.RestResponse;
 
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
+ * 上传文件控制器
+ *
  * @author biezhi
  * @date 2017/10/1
  */
@@ -21,21 +22,14 @@ public class UploadController {
         return "upload.html";
     }
 
-    @Route("image_upload")
+    @PostRoute("upload")
     @JSON
-    public RestResponse<?> doUpload(@MultipartParam FileItem fileItem) {
+    public RestResponse<?> doUpload(@MultipartParam FileItem fileItem) throws IOException {
         if (null != fileItem) {
-            byte[] data = fileItem.getData();
-            // Save the temporary file to the specified path
-            try {
-                Files.write(Paths.get(Const.CLASSPATH + "/upload/" + fileItem.getFileName()), data);
-                return RestResponse.ok();
-            } catch (IOException e) {
-                e.printStackTrace();
-                return RestResponse.fail(e.getMessage());
-            }
+            fileItem.moveTo(Paths.get(Const.CLASSPATH + "/upload/" + fileItem.getFileName()));
+            return RestResponse.ok();
         }
-        return RestResponse.ok();
+        return RestResponse.fail("没有文件上传");
     }
 
 }

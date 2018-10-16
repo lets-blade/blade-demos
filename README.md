@@ -3,6 +3,7 @@
 - [blade-helloworld](blade-helloworld)
 - [blade-static](blade-static)
 - [blade-upload](blade-upload)
+- [blade-download](blade-download)
 - [blade-ajax](blade-ajax)
 - [blade-route](blade-route)
 - [blade-template](blade-template)

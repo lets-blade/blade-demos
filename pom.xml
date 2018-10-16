@@ -34,11 +34,12 @@
         <module>blade-csrf-token</module>
         <module>blade-websocket</module>
         <module>blade-verify-code</module>
+        <module>blade-download</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.12-SNAPSHOT</blade.version>
+        <blade.version>2.0.11.BETA</blade.version>
     </properties>
     
     <dependencies>

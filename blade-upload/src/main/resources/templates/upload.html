@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -20,7 +20,7 @@
 <script>
     $('#upload').click(function () {
         $.ajax({
-            url: '/image_upload',
+            url: '/upload',
             type: 'POST',
             cache: false,
             data: new FormData($('#uploadForm')[0]),
