@@ -22,3 +22,4 @@
 - [blade-csrf-token](blade-csrf-token)
 - [blade-websocket](blade-websocket)
 - [blade-verify-code](blade-verify-code)
+- [blade-cors](blade-cors)

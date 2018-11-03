@@ -35,6 +35,7 @@
         <module>blade-websocket</module>
         <module>blade-verify-code</module>
         <module>blade-download</module>
+        <module>blade-cors</module>
     </modules>
 
     <properties>
