@@ -16,6 +16,11 @@ import com.blade.mvc.ui.RestResponse;
 @Path
 public class IndexController {
 
+    @GetRoute
+    public String index(){
+        return "index.html";
+    }
+
     @GetRoute("users")
     @JSON
     public RestResponse<List<User>> users(){
