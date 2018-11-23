@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<button id="b01" type="button">click and get users</button>
+<br/>
+<br/>
+<div>
+   Please check the Network's response headers
+</div>
+
+
+<script>
+    $("#b01").click(function () {
+        $.get("http://localhost:9000/users",function(data,status){
+        });
+    });
+</script>
+</body>
+</html>
