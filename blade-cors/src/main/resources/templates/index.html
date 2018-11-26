@@ -18,7 +18,16 @@
 
 <script>
     $("#b01").click(function () {
-        $.get("http://localhost:9000/users",function(data,status){
+
+        $.ajax({
+            url : 'http://localhost:9000/users',
+            type : "get",
+            headers: {
+                'webserver': 'blade'
+            },
+            success : function(data){
+                console.log(data);
+            }
         });
     });
 </script>
