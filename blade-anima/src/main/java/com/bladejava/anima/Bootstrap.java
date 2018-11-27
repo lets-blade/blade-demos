@@ -7,6 +7,8 @@ import com.blade.loader.BladeLoader;
 import io.github.biezhi.anima.Anima;
 
 /**
+ * 启动加载项
+ *
  * @author biezhi
  * @date 2018/6/21
  */

@@ -6,10 +6,6 @@ import com.blade.mvc.ui.RestResponse;
 import static io.github.biezhi.anima.Anima.deleteById;
 import static io.github.biezhi.anima.Anima.select;
 
-/**
- * @author biezhi
- * @date 2018-11-27
- */
 @Path(restful = true)
 public class IndexController {
 
