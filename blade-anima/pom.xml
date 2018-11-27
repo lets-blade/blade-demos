@@ -12,10 +12,31 @@
     <artifactId>blade-anima</artifactId>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.bladejava</groupId>
+            <artifactId>blade-asm</artifactId>
+            <version>0.0.4</version>
+        </dependency>
+
         <dependency>
             <groupId>io.github.biezhi</groupId>
             <artifactId>anima</artifactId>
             <version>0.2.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+
     </dependencies>
+
 </project>
