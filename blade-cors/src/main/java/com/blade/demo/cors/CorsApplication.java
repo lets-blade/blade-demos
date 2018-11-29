@@ -11,16 +11,22 @@ import java.util.stream.Stream;
 public class CorsApplication {
 
     public static void main(String[] args) {
-        CorsConfiger corsConfiger = CorsConfiger.builder()
-            .allowedMethods(Stream.of("Origin", "X-Requested-With", "Content-Type", "Accept", "Connection", "User-Agent", "Cookie", "Cache-Control").collect(
-                Collectors.toList()))
-            .allowedHeaders(Stream.of("GET", "OPTIONS", "HEAD", "PUT", "POST", "DELETE").collect(Collectors.toList()))
+
+        Blade.of()
+            .enableCors(Boolean.TRUE) // or   .enableCors(Boolean.TRUE, getCorsConfiger())
+            .start(CorsApplication.class, args);
+
+    }
+
+    public static CorsConfiger getCorsConfiger() {
+        return CorsConfiger.builder()
+            .allowedMethods(Stream.of("GET", "OPTIONS", "HEAD", "PUT", "POST", "DELETE").collect(Collectors.toList()))
+            .allowedHeaders(Stream
+                .of("Origin", "X-Requested-With", "Content-Type", "Accept", "Connection", "User-Agent", "Cookie",
+                    "Cache-Control").collect(
+                    Collectors.toList()))
             .maxAge(1300L)
             .allowCredentials(Boolean.TRUE)
             .build();
-
-        Blade.of()
-            .enableCors(Boolean.TRUE) // 这行代码你可以自己定义response的heads， 或者你使用默认的 enableCors(Boolean.TRUE)
-            .start(CorsApplication.class, args);
     }
 }
