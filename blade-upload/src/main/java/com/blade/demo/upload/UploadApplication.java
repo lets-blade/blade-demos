@@ -11,7 +11,7 @@ public class UploadApplication {
 
     public static void main(String[] args) {
         Blade.of().showFileList(true)
-                .use(new CorsMiddleware())
+                .enableCors(true)
                 .start(UploadApplication.class, args);
     }
 }
