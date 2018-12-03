@@ -14,15 +14,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.bladejava</groupId>
-            <artifactId>blade-asm</artifactId>
-            <version>0.0.4</version>
-        </dependency>
-
-        <dependency>
             <groupId>io.github.biezhi</groupId>
             <artifactId>anima</artifactId>
-            <version>0.2.4</version>
+            <version>0.2.5-SNAPSHOT</version>
         </dependency>
 
         <dependency>
