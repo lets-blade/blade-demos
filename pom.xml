@@ -40,7 +40,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.14.RELEASE</blade.version>
+        <blade.version>2.0.15.ALPHA</blade.version>
     </properties>
     
     <dependencies>

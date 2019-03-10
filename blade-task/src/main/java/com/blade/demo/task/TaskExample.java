@@ -65,4 +65,9 @@ public class TaskExample {
         System.out.println("Four Task: " + fourSize.get());
     }
 
+    @Schedule(name = "expression_demo", cron = "${task_exp}")
+    public void expressionDemo() {
+        System.out.println(LocalDateTime.now() + ": 我是表达式的例子");
+    }
+
 }
