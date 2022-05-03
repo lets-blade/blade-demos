@@ -1,9 +1,9 @@
 package com.blade.demo.tpl;
 
-import com.blade.Blade;
-import com.blade.ioc.annotation.Bean;
-import com.blade.loader.BladeLoader;
-import com.blade.mvc.view.template.JetbrickTemplateEngine;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.ioc.annotation.Bean;
+import com.hellokaton.blade.loader.BladeLoader;
+import com.hellokaton.blade.template.JetbrickTemplateEngine;
 
 /**
  * @author biezhi

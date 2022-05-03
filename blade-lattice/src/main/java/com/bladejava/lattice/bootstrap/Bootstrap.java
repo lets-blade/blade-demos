@@ -1,8 +1,8 @@
 package com.bladejava.lattice.bootstrap;
 
-import com.blade.Blade;
-import com.blade.event.BeanProcessor;
-import com.blade.ioc.annotation.Bean;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.ioc.annotation.Bean;
+import com.hellokaton.blade.loader.BladeLoader;
 import io.github.biezhi.lattice.Lattice;
 
 /**
@@ -10,18 +10,14 @@ import io.github.biezhi.lattice.Lattice;
  * @date 2018/6/4
  */
 @Bean
-public class Bootstrap implements BeanProcessor {
+public class Bootstrap implements BladeLoader {
 
     @Override
-    public void preHandle(Blade blade) {
+    public void load(Blade blade) {
         Lattice lattice = new Lattice();
         lattice.loginUrl("/login").unauthorizedUrl("/unauthorized");
         lattice.realm(new MyRealm());
         blade.register(lattice);
-    }
-
-    @Override
-    public void processor(Blade blade) {
     }
 
 }

@@ -1,7 +1,7 @@
 package com.blade.demo.upload;
 
-import com.blade.Blade;
-import com.blade.security.web.cors.CorsMiddleware;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.options.CorsOptions;
 
 /**
  * @author biezhi
@@ -10,8 +10,9 @@ import com.blade.security.web.cors.CorsMiddleware;
 public class UploadApplication {
 
     public static void main(String[] args) {
+        CorsOptions corsOptions = CorsOptions.forAnyOrigin().allowNullOrigin().allowCredentials();
         Blade.of().showFileList(true)
-                .enableCors(true)
+                .cors(corsOptions)
                 .start(UploadApplication.class, args);
     }
 }

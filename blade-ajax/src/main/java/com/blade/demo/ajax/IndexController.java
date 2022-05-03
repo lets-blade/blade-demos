@@ -1,12 +1,12 @@
 package com.blade.demo.ajax;
 
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.route.GET;
+import com.hellokaton.blade.mvc.ui.ResponseType;
+import com.hellokaton.blade.mvc.ui.RestResponse;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.JSON;
-import com.blade.mvc.annotation.Path;
-import com.blade.mvc.ui.RestResponse;
 
 /**
  * @author biezhi
@@ -15,21 +15,19 @@ import com.blade.mvc.ui.RestResponse;
 @Path
 public class IndexController {
 
-    @GetRoute
-    public String index(){
+    @GET
+    public String index() {
         return "index.html";
     }
 
-    @GetRoute("users")
-    @JSON
-    public RestResponse<List<User>> users(){
+    @GET(value = "users", responseType = ResponseType.JSON)
+    public RestResponse<List<User>> users() {
         List<User> users = this.buildUsers();
         return RestResponse.ok(users);
     }
 
-    private List<User> buildUsers(){
+    private List<User> buildUsers() {
         List<User> users = new ArrayList<>();
-
         return users;
     }
 

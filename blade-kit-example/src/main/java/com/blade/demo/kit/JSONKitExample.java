@@ -1,13 +1,13 @@
 package com.blade.demo.kit;
 
 import com.blade.demo.kit.model.User;
-import com.blade.kit.JsonKit;
+import com.hellokaton.blade.kit.JsonKit;
 
 import java.util.Date;
 
 /**
- * @author biezhi
- * @date 2017/12/20
+ * @author hellokaton
+ * @date 2022/5/3
  */
 public class JSONKitExample {
 
@@ -25,7 +25,7 @@ public class JSONKitExample {
 
         String str = "{\"username\":\"biezhi\",\"age\":22,\"money\":208.1,\"birthday\":\"2017年12月20日 14:34\",\"sex\":true,\"status\":2}";
 
-        User u2 = JsonKit.formJson(str, User.class);
+        User u2 = JsonKit.fromJson(str, User.class);
         System.out.println(u2);
     }
 

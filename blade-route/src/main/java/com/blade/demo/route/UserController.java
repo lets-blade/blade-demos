@@ -1,26 +1,27 @@
 package com.blade.demo.route;
 
-import com.blade.mvc.annotation.*;
-import com.blade.mvc.ui.RestResponse;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.request.Form;
+import com.hellokaton.blade.annotation.route.POST;
+import com.hellokaton.blade.mvc.ui.ResponseType;
+import com.hellokaton.blade.mvc.ui.RestResponse;
 
 /**
  * @author biezhi
- * @date 2017/9/28
+ * @date 2022/5/3
  */
-@Path("user")
+@Path(value = "user", responseType = ResponseType.JSON)
 public class UserController {
 
-    @PostRoute("save")
-    @JSON
-    public RestResponse<?> saveUser(@Param String username, @Param String password){
+    @POST("save")
+    public RestResponse<?> saveUser(@Form String username, @Form String password) {
         System.out.println("username => " + username);
         System.out.println("password => " + password);
         return RestResponse.ok();
     }
 
-    @PostRoute("save-by-model")
-    @JSON
-    public RestResponse<?> saveUserByModel(User user){
+    @POST("save-by-model")
+    public RestResponse<?> saveUserByModel(User user) {
         System.out.println("username => " + user.getUsername());
         System.out.println("password => " + user.getPassword());
         return RestResponse.ok();

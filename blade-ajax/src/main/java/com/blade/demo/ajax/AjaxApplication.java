@@ -1,6 +1,7 @@
 package com.blade.demo.ajax;
 
-import com.blade.Blade;
+
+import com.hellokaton.blade.Blade;
 
 /**
  * @author biezhi

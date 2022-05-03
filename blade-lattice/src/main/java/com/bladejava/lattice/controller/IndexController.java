@@ -1,8 +1,8 @@
 package com.bladejava.lattice.controller;
 
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.Path;
-import com.blade.mvc.http.Response;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.route.GET;
+import com.hellokaton.blade.mvc.http.Response;
 
 /**
  * @author biezhi
@@ -11,12 +11,12 @@ import com.blade.mvc.http.Response;
 @Path
 public class IndexController {
 
-    @GetRoute("/")
+    @GET("/")
     public void home(Response response) {
         response.html("Home Page.");
     }
 
-    @GetRoute("/login")
+    @GET("/login")
     public String login() {
         return "login.html";
     }

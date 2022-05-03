@@ -1,7 +1,7 @@
 package com.bladejava.demo.download;
 
-import com.blade.Blade;
-import com.blade.mvc.http.ByteBody;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.mvc.http.ByteBody;
 
 import java.io.File;
 
@@ -12,8 +12,8 @@ import java.io.File;
  * http://127.0.0.1:9000/download2
  *
  * @author biezhi
- * @date 2018/10/16
- * @since blade-2.0.11.BETA
+ * @date 2022/5/3
+ * @since blade-2.1.0.BETA
  */
 public class DownloadApplication {
 

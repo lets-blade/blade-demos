@@ -1,9 +1,8 @@
 package com.bladejava.demo.test.service;
 
-import com.blade.ioc.annotation.Inject;
 import com.bladejava.demo.service.PostService;
-import com.bladejava.demo.service.UserService;
 import com.bladejava.demo.test.BaseTest;
+import com.hellokaton.blade.ioc.annotation.Inject;
 import org.junit.Assert;
 import org.junit.Test;
 

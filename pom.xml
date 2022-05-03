@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bladejava</groupId>
+    <groupId>com.hellokaton</groupId>
     <artifactId>blade-demos</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
@@ -40,15 +40,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blade.version>2.0.15.ALPHA</blade.version>
+        <blade-core.version>2.1.0.BETA</blade-core.version>
     </properties>
     
     <dependencies>
         <!-- mvc -->
         <dependency>
-            <groupId>com.bladejava</groupId>
-            <artifactId>blade-mvc</artifactId>
-            <version>${blade.version}</version>
+            <groupId>com.hellokaton</groupId>
+            <artifactId>blade-core</artifactId>
+            <version>${blade-core.version}</version>
         </dependency>
     </dependencies>
 

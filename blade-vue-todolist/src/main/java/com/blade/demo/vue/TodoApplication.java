@@ -1,13 +1,14 @@
 package com.blade.demo.vue;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.kit.StringKit;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author biezhi
- * @date 2017/9/28
+ * @author hellokaton
+ * @date 2022/5/3
  */
 public class TodoApplication {
 
@@ -16,40 +17,45 @@ public class TodoApplication {
     public static void main(String[] args) {
         Blade.of()
                 .get("/", ctx -> ctx.render("index.html"))
-                .post("/add", (request, response) -> {
-                    request.query("todo").ifPresent(todo -> todoList.add(new Todo(todo, Todo.ACTIVE)));
+                .post("/add", ctx -> {
+                    String todo = ctx.query("todo");
+                    if (StringKit.isNotBlank(todo)) {
+                        todoList.add(new Todo(todo, Todo.ACTIVE));
+                    }
                     System.out.println("TodoList: " + todoList);
-                    response.text("success");
+                    ctx.text("success");
                 })
-                .post("/edit", (request, response) -> {
-                    request.query("oldTodo").ifPresent(todo ->
-                            todoList.stream().filter(t -> t.getValue().equals(todo))
-                                    .findFirst()
-                                    .ifPresent(todoModel -> todoModel.setValue(todo))
-                    );
+                .post("/edit", ctx -> {
+                    String todo = ctx.query("oldTodo");
+                    if (StringKit.isNotBlank(todo)) {
+                        todoList.stream().filter(t -> t.getValue().equals(todo))
+                                .findFirst()
+                                .ifPresent(todoModel -> todoModel.setValue(todo));
+                    }
                     System.out.println("TodoList: " + todoList);
-                    response.text("success");
+                    ctx.text("success");
                 })
-                .post("/remove", (request, response) -> {
-                    request.query("todo").ifPresent(todo ->
-                            todoList.stream().filter(t -> t.getValue().equals(todo))
-                                    .findFirst()
-                                    .ifPresent(todoModel -> todoList.remove(todoModel)));
+                .post("/remove", ctx -> {
+                    String todo = ctx.query("todo");
+                    if (StringKit.isNotBlank(todo)) {
+                        todoList.stream().filter(t -> t.getValue().equals(todo))
+                                .findFirst()
+                                .ifPresent(todoList::remove);
+                    }
                     System.out.println("TodoList: " + todoList);
-                    response.text("success");
+                    ctx.text("success");
                 })
-                .post("/status/:status", (request, response) -> {
-                    String status = request.pathString("status");
-                    request.query("todo").ifPresent(todo ->
-                            todoList.stream().filter(t -> t.getValue().equals(todo))
-                                    .findFirst()
-                                    .ifPresent(todoModel -> todoModel.setStatus(status)));
+                .post("/status/:status", ctx -> {
+                    String status = ctx.pathString("status");
+                    ctx.request().form("todo")
+                            .flatMap(todo -> todoList.stream().filter(t -> t.getValue().equals(todo))
+                                    .findFirst()).ifPresent(todoModel -> todoModel.setStatus(status));
                     System.out.println("TodoList: " + todoList);
-                    response.text("success");
+                    ctx.text("success");
                 })
-                .post("/clean", (request, response) -> {
+                .post("/clean", ctx -> {
                     todoList.clear();
-                    response.text("success");
+                    ctx.text("success");
                 })
                 .start(TodoApplication.class, args);
     }

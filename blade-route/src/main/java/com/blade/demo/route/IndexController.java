@@ -1,7 +1,7 @@
 package com.blade.demo.route;
 
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.Path;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.route.GET;
 
 /**
  * @author biezhi
@@ -10,8 +10,8 @@ import com.blade.mvc.annotation.Path;
 @Path
 public class IndexController {
 
-    @GetRoute("hello")
-    public String hello(){
+    @GET("hello")
+    public String hello() {
         return "hello.html";
     }
 

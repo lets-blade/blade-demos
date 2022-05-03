@@ -1,6 +1,6 @@
 package com.bladejava.lattice;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 import io.github.biezhi.lattice.LatticeMiddleware;
 
 /**
@@ -10,7 +10,9 @@ import io.github.biezhi.lattice.LatticeMiddleware;
 public class LatticeApplication {
 
     public static void main(String[] args) {
-        Blade.of().use(new LatticeMiddleware()).start(LatticeApplication.class, args);
+        Blade.of()
+//                .use(new LatticeMiddleware())
+                .start(LatticeApplication.class, args);
     }
 
 }

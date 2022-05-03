@@ -1,8 +1,8 @@
 package com.blade.demo.tpl;
 
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.Path;
-import com.blade.mvc.http.Request;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.route.GET;
+import com.hellokaton.blade.mvc.http.Request;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -16,9 +16,8 @@ import java.util.Map;
 @Path
 public class IndexController {
 
-    @GetRoute
+    @GET
     public String index(Request request) {
-
         List<String> users = Arrays.asList("jack", "biezhi", "rose");
         request.attribute("users", users);
 
@@ -30,7 +29,7 @@ public class IndexController {
         return "index.html";
     }
 
-    @GetRoute("login")
+    @GET("login")
     public String login() {
         return "login.html";
     }

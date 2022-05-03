@@ -1,6 +1,7 @@
 package com.bladejava.anima;
 
-import com.blade.Blade;
+
+import com.hellokaton.blade.Blade;
 
 public class DBApplication {
 

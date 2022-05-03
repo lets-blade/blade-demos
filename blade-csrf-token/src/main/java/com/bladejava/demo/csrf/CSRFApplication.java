@@ -1,7 +1,7 @@
 package com.bladejava.demo.csrf;
 
-import com.blade.Blade;
-import com.blade.security.web.csrf.CsrfMiddleware;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.security.csrf.CsrfMiddleware;
 
 /**
  * CSRF Token Example

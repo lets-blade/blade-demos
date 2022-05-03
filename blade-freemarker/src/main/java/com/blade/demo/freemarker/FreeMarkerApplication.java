@@ -1,6 +1,6 @@
 package com.blade.demo.freemarker;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 
 /**
  * @author biezhi

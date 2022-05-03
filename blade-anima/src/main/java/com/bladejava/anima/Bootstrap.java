@@ -1,16 +1,16 @@
 package com.bladejava.anima;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.blade.Blade;
-import com.blade.ioc.annotation.Bean;
-import com.blade.loader.BladeLoader;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.ioc.annotation.Bean;
+import com.hellokaton.blade.loader.BladeLoader;
 import io.github.biezhi.anima.Anima;
 
 /**
  * 启动加载项
  *
  * @author biezhi
- * @date 2018/6/21
+ * @date 2022/5/3
  */
 @Bean
 public class Bootstrap implements BladeLoader {

@@ -1,24 +1,25 @@
 package com.blade.demo.route;
 
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.Path;
-import com.blade.mvc.annotation.PostRoute;
-import com.blade.mvc.ui.RestResponse;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.route.GET;
+import com.hellokaton.blade.annotation.route.POST;
+import com.hellokaton.blade.mvc.ui.ResponseType;
+import com.hellokaton.blade.mvc.ui.RestResponse;
 
 /**
  * @author biezhi
  * @date 2018/6/26
  */
-@Path(value = "rest", restful = true)
+@Path(value = "rest", responseType = ResponseType.JSON)
 public class RestController2 {
 
-    @PostRoute("/hello")
-    public RestResponse hello(){
+    @POST("/hello")
+    public RestResponse<?> hello() {
         return RestResponse.ok("hello");
     }
 
-    @GetRoute("/world")
-    public RestResponse world(){
+    @GET("/world")
+    public RestResponse<?> world() {
         return RestResponse.ok("world");
     }
 

@@ -1,10 +1,10 @@
 package com.blade.demo.helloworld;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 
 /**
- * @author biezhi
- * @date 2017/9/28
+ * @author hellokaton
+ * @date 2022/5/3
  */
 public class HelloApplication {
 

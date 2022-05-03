@@ -1,8 +1,8 @@
 package com.blade.demo.verifycode;
 
-import com.blade.Blade;
-import com.blade.patchca.DefaultPatchca;
-import com.blade.patchca.PatchcaException;
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.patchca.DefaultPatchca;
+import com.hellokaton.blade.patchca.PatchcaException;
 
 /**
  * Blade Patcha Example
@@ -13,8 +13,8 @@ import com.blade.patchca.PatchcaException;
  * 2. verify code
  * http://127.0.0.1:9000/verify?code=LmCGY
  *
- * @author biezhi
- * @date 2018/9/14
+ * @author hellokaton
+ * @date 2022/5/4
  */
 public class VerifyCodeApplication {
 
@@ -31,7 +31,7 @@ public class VerifyCodeApplication {
                 System.out.println("Patchca Error: " + e.getMessage());
             }
         }).get("/verify", context -> {
-            String  code    = context.fromString("code", "CODE");
+            String code = context.request().query("code", "CODE");
             boolean success = patchca.verify(code);
             context.text("verify result: " + success);
         }).start(VerifyCodeApplication.class, args);

@@ -1,11 +1,16 @@
 package com.bladejava.demo.controller;
 
-import com.blade.ioc.annotation.Inject;
-import com.blade.kit.StringKit;
-import com.blade.mvc.annotation.*;
-import com.blade.mvc.ui.RestResponse;
 import com.bladejava.demo.model.User;
 import com.bladejava.demo.service.UserService;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.request.Body;
+import com.hellokaton.blade.annotation.request.PathParam;
+import com.hellokaton.blade.annotation.route.GET;
+import com.hellokaton.blade.annotation.route.POST;
+import com.hellokaton.blade.ioc.annotation.Inject;
+import com.hellokaton.blade.kit.StringKit;
+import com.hellokaton.blade.mvc.ui.ResponseType;
+import com.hellokaton.blade.mvc.ui.RestResponse;
 
 import java.util.Collections;
 
@@ -13,27 +18,24 @@ import java.util.Collections;
  * @author biezhi
  * @date 2018/5/31
  */
-@Path("user")
+@Path(value = "user", responseType = ResponseType.JSON)
 public class UserController {
 
     @Inject
     private UserService userService;
 
-    @PostRoute("save")
-    @JSON
-    public RestResponse saveUser(@BodyParam User user) {
+    @POST("save")
+    public RestResponse<?> saveUser(@Body User user) {
         return RestResponse.ok(userService.saveUser(user));
     }
 
-    @GetRoute("list")
-    @JSON
-    public RestResponse list() {
+    @GET("list")
+    public RestResponse<?> list() {
         return RestResponse.ok(Collections.singletonList(new User(123L, "biezhi")));
     }
 
-    @GetRoute("detail/:uid")
-    @JSON
-    public RestResponse detail(@PathParam Long uid) {
+    @GET("detail/:uid")
+    public RestResponse<?> detail(@PathParam Long uid) {
         return RestResponse.ok(new User(uid, StringKit.rand(10)));
     }
 

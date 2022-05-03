@@ -1,7 +1,7 @@
 package com.bladejava.demo.test;
 
-import com.blade.test.BladeApplication;
-import com.blade.test.BladeTestRunner;
+import com.hellokaton.blade.test.BladeApplication;
+import com.hellokaton.blade.test.BladeTestRunner;
 import com.bladejava.demo.TestApplication;
 import org.junit.runner.RunWith;
 

@@ -1,6 +1,6 @@
 package com.bladejava.errorpage;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 
 /**
  * @author biezhi

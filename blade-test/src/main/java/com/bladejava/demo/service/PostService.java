@@ -1,8 +1,8 @@
 package com.bladejava.demo.service;
 
-import com.blade.ioc.annotation.Bean;
-import com.blade.ioc.annotation.Inject;
 import com.bladejava.demo.model.User;
+import com.hellokaton.blade.ioc.annotation.Bean;
+import com.hellokaton.blade.ioc.annotation.Inject;
 
 /**
  * @author biezhi
@@ -14,7 +14,7 @@ public class PostService {
     @Inject
     private UserService userService;
 
-    public boolean savePost(Long uid){
+    public boolean savePost(Long uid) {
         userService.saveUser(new User(uid, "biezhi"));
         // save post
         return true;

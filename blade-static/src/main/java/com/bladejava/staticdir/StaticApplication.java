@@ -1,6 +1,6 @@
 package com.bladejava.staticdir;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 
 /**
  *

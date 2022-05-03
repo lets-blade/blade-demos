@@ -1,25 +1,31 @@
 package com.bladejava.anima;
 
-import com.blade.mvc.annotation.*;
-import com.blade.mvc.ui.RestResponse;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.request.Body;
+import com.hellokaton.blade.annotation.request.PathParam;
+import com.hellokaton.blade.annotation.route.DELETE;
+import com.hellokaton.blade.annotation.route.GET;
+import com.hellokaton.blade.annotation.route.POST;
+import com.hellokaton.blade.mvc.ui.ResponseType;
+import com.hellokaton.blade.mvc.ui.RestResponse;
 
 import static io.github.biezhi.anima.Anima.deleteById;
 import static io.github.biezhi.anima.Anima.select;
 
-@Path(restful = true)
+@Path(responseType = ResponseType.JSON)
 public class IndexController {
 
-    @GetRoute("users")
+    @GET("users")
     public RestResponse users() {
         return RestResponse.ok(select().from(User.class).all());
     }
 
-    @PostRoute("users")
-    public RestResponse saveUser(@BodyParam User user) {
+    @POST("users")
+    public RestResponse saveUser(@Body User user) {
         return RestResponse.ok(user.save().asInt());
     }
 
-    @DeleteRoute("user/:uid")
+    @DELETE("user/:uid")
     public RestResponse deleteUser(@PathParam Integer uid) {
         return RestResponse.ok(deleteById(User.class, uid));
     }

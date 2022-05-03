@@ -1,8 +1,9 @@
 package com.bladejava.demo.basicauth;
 
-import com.blade.Blade;
-import com.blade.security.web.auth.AuthOption;
-import com.blade.security.web.auth.BasicAuthMiddleware;
+
+import com.hellokaton.blade.Blade;
+import com.hellokaton.blade.security.auth.AuthOption;
+import com.hellokaton.blade.security.auth.BasicAuthMiddleware;
 
 /**
  * Basic Auth Example

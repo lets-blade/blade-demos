@@ -1,7 +1,7 @@
 package com.bladejava.demo.service;
 
-import com.blade.ioc.annotation.Bean;
 import com.bladejava.demo.model.User;
+import com.hellokaton.blade.ioc.annotation.Bean;
 
 /**
  * @author biezhi

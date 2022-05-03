@@ -1,7 +1,7 @@
 package com.blade.demo.mongo;
 
-import com.blade.mvc.annotation.GetRoute;
-import com.blade.mvc.annotation.Path;
+import com.hellokaton.blade.annotation.Path;
+import com.hellokaton.blade.annotation.route.GET;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import org.bson.Document;
@@ -19,10 +19,10 @@ public class IndexController {
 
     private static final Logger log = LoggerFactory.getLogger(IndexController.class);
 
-    @GetRoute("/read")
+    @GET("/read")
     public void read() {
         MongoCollection<Document> collection = MongoConfig.getMongoDatabase().getCollection("test");
-        MongoCursor<Document>     cursor     = collection.find().iterator();
+        MongoCursor<Document> cursor = collection.find().iterator();
 
         try {
             while (cursor.hasNext()) {
@@ -33,7 +33,7 @@ public class IndexController {
         }
     }
 
-    @GetRoute("/write")
+    @GET("/write")
     public void write() {
         MongoCollection<Document> collection = MongoConfig.getMongoDatabase().getCollection("test");
 

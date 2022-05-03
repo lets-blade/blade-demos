@@ -1,6 +1,6 @@
 package com.blade.demo.tpl;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 
 /**
  * @author biezhi

@@ -1,7 +1,5 @@
 package com.blade.demo.kit.model;
 
-import com.blade.kit.json.JsonFormat;
-import com.blade.kit.json.MappingType;
 
 import java.util.Date;
 
@@ -11,14 +9,14 @@ import java.util.Date;
  */
 public class User {
 
-    private String  username;
+    private String username;
     private Integer age;
-    private double  money;
+    private double money;
 
-    @JsonFormat(value = "yyyy年MM月dd日 HH:mm", type = MappingType.DATE_PATTEN)
-    private Date    birthday;
+    //    @JsonFormat(value = "yyyy年MM月dd日 HH:mm", type = MappingType.DATE_PATTEN)
+    private Date birthday;
     private Boolean sex;
-    private Byte    status;
+    private Byte status;
 
     public String getUsername() {
         return username;

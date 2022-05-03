@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>blade-demos</artifactId>
-        <groupId>com.bladejava</groupId>
+        <groupId>com.hellokaton</groupId>
         <version>0.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -21,7 +21,7 @@
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>com.bladejava.staticdir.StaticApplication</mainClass>
+                            <mainClass>com.hellokaton.staticdir.StaticApplication</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

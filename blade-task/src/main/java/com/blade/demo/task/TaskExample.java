@@ -1,10 +1,10 @@
 package com.blade.demo.task;
 
-import com.blade.ioc.annotation.Bean;
-import com.blade.kit.DateKit;
-import com.blade.task.TaskContext;
-import com.blade.task.TaskManager;
-import com.blade.task.annotation.Schedule;
+import com.hellokaton.blade.ioc.annotation.Bean;
+import com.hellokaton.blade.kit.DateKit;
+import com.hellokaton.blade.task.TaskContext;
+import com.hellokaton.blade.task.TaskManager;
+import com.hellokaton.blade.task.annotation.Schedule;
 
 import java.time.LocalDateTime;
 import java.util.concurrent.atomic.AtomicInteger;

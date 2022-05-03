@@ -1,6 +1,6 @@
 package com.blade.demo.mongo;
 
-import com.blade.Blade;
+import com.hellokaton.blade.Blade;
 
 /**
  * http://www.mkyong.com/mongodb/java-mongodb-hello-world-example/
