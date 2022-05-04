@@ -4,7 +4,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.hellokaton.blade.Blade;
 import com.hellokaton.blade.ioc.annotation.Bean;
 import com.hellokaton.blade.loader.BladeLoader;
-import io.github.biezhi.anima.Anima;
+import com.hellokaton.anima.Anima;
 
 /**
  * 启动加载项

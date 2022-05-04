@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class RouteApplication {
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .get("/get", ctx -> ctx.text("Get Route"))
                 .post("/post", ctx -> ctx.text("Post Route"))
                 .start(RouteApplication.class, args);

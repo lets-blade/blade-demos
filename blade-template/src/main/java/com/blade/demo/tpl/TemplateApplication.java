@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class TemplateApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(TemplateApplication.class, args);
+        Blade.create().start(TemplateApplication.class, args);
     }
 
 }

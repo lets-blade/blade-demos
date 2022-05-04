@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class FreeMarkerApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(FreeMarkerApplication.class, args);
+        Blade.create().start(FreeMarkerApplication.class, args);
     }
 
 }

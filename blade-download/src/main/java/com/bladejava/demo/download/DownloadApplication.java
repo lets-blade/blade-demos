@@ -18,7 +18,7 @@ import java.io.File;
 public class DownloadApplication {
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .get("/download1", ctx -> {
                     File file = new File("blade-download/src/main/resources/static/octo.png");
                     ctx.response().contentType("image/png");

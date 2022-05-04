@@ -10,6 +10,6 @@ import com.hellokaton.blade.Blade;
 public class AjaxApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(AjaxApplication.class, args);
+        Blade.create().start(AjaxApplication.class, args);
     }
 }

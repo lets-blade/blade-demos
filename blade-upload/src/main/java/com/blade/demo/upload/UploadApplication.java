@@ -11,7 +11,7 @@ public class UploadApplication {
 
     public static void main(String[] args) {
         CorsOptions corsOptions = CorsOptions.forAnyOrigin().allowNullOrigin().allowCredentials();
-        Blade.of().showFileList(true)
+        Blade.create().showFileList(true)
                 .cors(corsOptions)
                 .start(UploadApplication.class, args);
     }

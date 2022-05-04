@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class CustomApplication {
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .bannerText("Hei hei hei~~~")
                 .threadName("(* ￣3)(ε￣ *)")
                 .start(CustomApplication.class, args);

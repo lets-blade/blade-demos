@@ -22,7 +22,7 @@ import com.hellokaton.blade.security.csrf.CsrfMiddleware;
 public class CSRFApplication {
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .get("/", ctx -> ctx.text("token: " + ctx.request().attribute("_csrf_token")))
                 .post("/", ctx -> ctx.text("Access OK!"))
                 .use(new CsrfMiddleware())

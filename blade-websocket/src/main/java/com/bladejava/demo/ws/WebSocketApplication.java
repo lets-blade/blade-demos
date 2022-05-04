@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class WebSocketApplication {
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .get("/", ctx -> ctx.render("index.html"))
 //                .webSocket("/chat", new WebSocketHandler() {
 //                    @Override

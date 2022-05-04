@@ -10,7 +10,7 @@ import com.hellokaton.blade.Blade;
 public class StaticApplication {
 
     public static void main(String[] args) {
-         Blade.of().start(StaticApplication.class, args);
+         Blade.create().start(StaticApplication.class, args);
     }
 
 }

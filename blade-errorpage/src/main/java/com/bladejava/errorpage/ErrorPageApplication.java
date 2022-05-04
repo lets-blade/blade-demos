@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class ErrorPageApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(ErrorPageApplication.class, args);
+        Blade.create().start(ErrorPageApplication.class, args);
     }
 
 }

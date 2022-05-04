@@ -4,9 +4,9 @@ import com.hellokaton.blade.annotation.Path;
 import com.hellokaton.blade.annotation.route.GET;
 import com.hellokaton.blade.annotation.route.POST;
 import com.hellokaton.blade.mvc.ui.RestResponse;
-import io.github.biezhi.lattice.annotation.Permissions;
-import io.github.biezhi.lattice.annotation.Roles;
-import io.github.biezhi.lattice.annotation.Users;
+import com.hellokaton.lattice.annotation.Permissions;
+import com.hellokaton.lattice.annotation.Roles;
+import com.hellokaton.lattice.annotation.Users;
 
 /**
  * @author biezhi

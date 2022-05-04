@@ -10,7 +10,7 @@ import com.hellokaton.blade.options.HttpOptions;
 public class GzipApplication {
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .get("/", ctx -> ctx.render("index.html"))
                 .http(HttpOptions::enableGzip)
                 .start(GzipApplication.class, args);

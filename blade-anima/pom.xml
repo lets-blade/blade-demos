@@ -14,9 +14,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>io.github.biezhi</groupId>
+            <groupId>com.hellokaton</groupId>
             <artifactId>anima</artifactId>
-            <version>0.2.6</version>
+            <version>0.3.0</version>
         </dependency>
 
         <dependency>

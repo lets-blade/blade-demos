@@ -17,7 +17,7 @@ public class BasicAuthApplication {
         AuthOption authOption = AuthOption.builder().build();
         authOption.addUser("admin", "123456");
 
-        Blade.of()
+        Blade.create()
                 .get("/", ctx -> ctx.text("Hello World."))
                 .use(new BasicAuthMiddleware(authOption))
                 .start(BasicAuthApplication.class, args);

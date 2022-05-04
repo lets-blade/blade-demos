@@ -3,7 +3,7 @@ package com.bladejava.lattice.bootstrap;
 import com.hellokaton.blade.Blade;
 import com.hellokaton.blade.ioc.annotation.Bean;
 import com.hellokaton.blade.loader.BladeLoader;
-import io.github.biezhi.lattice.Lattice;
+import com.hellokaton.lattice.Lattice;
 
 /**
  * @author biezhi

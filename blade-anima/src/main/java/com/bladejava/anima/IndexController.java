@@ -9,8 +9,8 @@ import com.hellokaton.blade.annotation.route.POST;
 import com.hellokaton.blade.mvc.ui.ResponseType;
 import com.hellokaton.blade.mvc.ui.RestResponse;
 
-import static io.github.biezhi.anima.Anima.deleteById;
-import static io.github.biezhi.anima.Anima.select;
+import static com.hellokaton.anima.Anima.deleteById;
+import static com.hellokaton.anima.Anima.select;
 
 @Path(responseType = ResponseType.JSON)
 public class IndexController {

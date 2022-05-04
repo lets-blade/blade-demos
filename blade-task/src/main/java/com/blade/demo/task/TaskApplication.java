@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class TaskApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(TaskApplication.class, args);
+        Blade.create().start(TaskApplication.class, args);
     }
 
 }

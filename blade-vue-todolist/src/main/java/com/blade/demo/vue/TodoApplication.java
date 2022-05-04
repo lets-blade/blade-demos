@@ -15,7 +15,7 @@ public class TodoApplication {
     private static final List<Todo> todoList = new ArrayList<>();
 
     public static void main(String[] args) {
-        Blade.of()
+        Blade.create()
                 .get("/", ctx -> ctx.render("index.html"))
                 .post("/add", ctx -> {
                     String todo = ctx.query("todo");

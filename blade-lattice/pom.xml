@@ -13,9 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.biezhi</groupId>
-            <artifactId>lattice</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.hellokaton</groupId>
+            <artifactId>blade-lattice</artifactId>
+            <version>0.1.0</version>
         </dependency>
     </dependencies>
 

@@ -9,7 +9,7 @@ import com.hellokaton.blade.Blade;
 public class ParamApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(ParamApplication.class, args);
+        Blade.create().start(ParamApplication.class, args);
     }
 
 }

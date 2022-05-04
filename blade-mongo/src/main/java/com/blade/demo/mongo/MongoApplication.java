@@ -11,7 +11,7 @@ import com.hellokaton.blade.Blade;
 public class MongoApplication {
 
     public static void main(String[] args) {
-        Blade.of().start(MongoApplication.class, args);
+        Blade.create().start(MongoApplication.class, args);
     }
 
 }
